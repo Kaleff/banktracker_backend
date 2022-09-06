@@ -23,4 +23,4 @@ Artisan::command('updaterates', function(RateController $rateController) {
     $this->info('Scraping data..');
     $rateController->store();
     $this->info('Data succesfully stored!');
-});
+})->purpose('Update the currency rates');
