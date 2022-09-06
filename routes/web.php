@@ -14,4 +14,4 @@ use App\Http\Controllers\RateController;
 |
 */
 
-Route::get('/', [RateController::class, 'index']);
+Route::get('/', [RateController::class, 'store']);
