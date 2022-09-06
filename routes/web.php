@@ -1,7 +1,6 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\RateController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,4 +13,6 @@ use App\Http\Controllers\RateController;
 |
 */
 
-Route::get('/', [RateController::class, 'store']);
+Route::get('/', function () {
+    return view('welcome');
+});

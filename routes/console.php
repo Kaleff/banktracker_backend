@@ -20,5 +20,7 @@ Artisan::command('inspire', function () {
 })->purpose('Display an inspiring quote');
 
 Artisan::command('updaterates', function(RateController $rateController) {
+    $this->info('Scraping data..');
     $rateController->store();
+    $this->info('Data succesfully stored!');
 });
