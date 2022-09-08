@@ -20,3 +20,5 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 Route::get('rates', [RateController::class, 'index']);
+
+Route::get('rates/{currency}', [RateController::class, 'show']);
